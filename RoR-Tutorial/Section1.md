@@ -4,12 +4,14 @@
 # RailsアプリケーションにおけるREST
 アプリケーションを構成するコンポーネント (ユーザーやマイクロポストなど) を「リソース」としてモデル化すること
 
-完全なコマンド	短縮形
-$ rails server	$ rails s
-$ rails console	$ rails c
-$ rails generate	$ rails g
-$ rails test	$ rails t
-$ bundle install	$ bundle
+|完全なコマンド|短縮形|
+|:---|:---|
+|```$ rails server```|```$ rails s```|
+|```$ rails console```|```$ rails c```|
+|```$ rails generate```|```$ rails g```|
+|```$ rails test```|```$ rails t```|
+|```$ bundle install```|```$ bundle```|
+
 
 assert_selectメソッド
 特定のHTMLタグが存在するかどうかをテスト
@@ -28,12 +30,14 @@ assert_selectメソッド
 to_aメソッド
 配列に変換する
 
+```console
 >> 0..9
 => 0..9
->> 0..9.to_a              # おっと、9に対してto_aを呼んでしまっていますね
+>> 0..9.to_a　# おっと、9に対してto_aを呼んでしまっていますね
 NoMethodError: undefined method `to_a' for 9:Fixnum
->> (0..9).to_a            # 丸カッコを使い、範囲オブジェクトに対してto_aを呼びましょう
+>> (0..9).to_a # 丸カッコを使い、範囲オブジェクトに対してto_aを呼びましょう
 => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 
  p :name             # 'puts :name.inspect' と同じ
 
@@ -96,4 +100,5 @@ ref to [](https://wa3.i-3-i.info/word14933.html)
 
 # Cloud9 で heroku が毎回消える現象への対策
 [AWS Cloud9でHerokuのインストールが毎回必要?になる(Railsチュートリアル )](https://qiita.com/bashinkei/items/c8d9bd1e622811e9c950)
+上記Qiita記事で解決
 
