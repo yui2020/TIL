@@ -67,3 +67,8 @@ CMDは作らない
 本番環境とテスト環境でDockerfileを分ける場合になどに使う
 e.g. Dockerfile.dev と Dockerfile.test 
 
+### ENTRYPOINT
+- ENTRYPOINTはrun時に上書きできない
+- ENTRYPOINTがある場合はCMDは[“params1”, “params2”]の形をとる（つまり、ENTRYPOINTで指定したコマンドの引数）
+- Run時に上書きできるのはCMD部分のみ
+- コンテナをコマンドのように使いたい時に使う
