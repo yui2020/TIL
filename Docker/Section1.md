@@ -72,3 +72,31 @@ e.g. Dockerfile.dev と Dockerfile.test
 - ENTRYPOINTがある場合はCMDは[“params1”, “params2”]の形をとる（つまり、ENTRYPOINTで指定したコマンドの引数）
 - Run時に上書きできるのはCMD部分のみ
 - コンテナをコマンドのように使いたい時に使う
+
+# Docker run オプション
+## -v
+-v <host>:<container> 
+ホストのファイルシステムをコンテナにマウントする（実行環境で使う）
+コンテナにディレクトリがない時は自動で新規作成される
+
+## -u
+-u <user-id>:<group-id>
+原則以下の形で権限を指定
+```-u $(id -u):$(id -g)```
+ユーザーIDとグループIDを指定してコンテナをrunする
+
+## -p
+-p <host_port>:<container_port>
+ホストのポートをコンテナのポートにつなげる
+E.g. ```-p 8888:8888```
+ポート
+プロセスがデータ通信するために使うもの
+
+## --cpus --memory
+```--cpus <#ofCPUs> --memory <byte>```
+コンピューターリソースの上限の設定
+
+## inspect コマンド
+```docker inspect <container> | grep -I <something>```
+コンテナの詳細を表示
+
