@@ -34,13 +34,16 @@ ID名を指定してbuild
 
 ### FROM
 ベースとなるイメージを決定
+
 E.g. Ubuntu, Alpine(5MBしかなくてコンパクト）
 
 ### RUN
 Linuxコマンドを実行
 
+```
 apt-get update
 apt-get install
+```
 
 ### CMD
 コンテナのデフォルトのコマンドを指定
@@ -64,7 +67,9 @@ CMDは作らない
 
 ### Dockerfileという名のファイルがビルドコンテキストに入っていない場合
 ```docker build -f <Dockerfile-name> <build-context>```
+
 本番環境とテスト環境でDockerfileを分ける場合になどに使う
+
 e.g. Dockerfile.dev と Dockerfile.test 
 
 ### ENTRYPOINT
