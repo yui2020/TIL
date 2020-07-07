@@ -1,4 +1,16 @@
+
+# Mermaidとは
+
++ シーケンス図とかが手軽にさくっと描ける
++ 複雑な構図とかは苦手
+
 # Mermaid記法
+
+**NOTE: GitHub上でシーケンス図を表示するためには下記のようなChrome拡張機能が必要です**
+
+**NOTE: To view a sequence diagram on GitHub, you need the following chrome extension;**
+
+[mermaid-diagrams](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
 
 ## Sequence diagrams
 
