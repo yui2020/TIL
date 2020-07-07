@@ -128,7 +128,7 @@ sequenceDiagram
 sequenceDiagram
   Alice->>+John: Hello John, how are you?
   Note right of John:he is so busy...
-  alice->>+John: John, can you hear me?
+  Alice->>+John: John, can you hear me?
   John-->>-Alice: Hi Alice, I can hear you!
   John-->>-Alice: I feel great!
   Note over John,Alice: Nice Communication!
