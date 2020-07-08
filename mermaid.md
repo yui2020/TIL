@@ -6,9 +6,9 @@
 
 # Mermaid記法
 
-**NOTE: GitHub上でシーケンス図を表示するためには下記のようなChrome拡張機能が必要です**
+NOTE: GitHub上でシーケンス図を表示するためには下記のような**Chrome拡張機能が必要**です
 
-**NOTE: To view a sequence diagram on GitHub, you need the following chrome extension;**
+NOTE: To view a sequence diagram on GitHub, you **need the following chrome extension**;
 
 [mermaid-diagrams](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
 
@@ -123,6 +123,16 @@ sequenceDiagram
 + Positionは```right of```, ```left of```, ```over```で指定
 + Actorはどのライフラインにつけるか
 + Positionで```over```を使用する時は橋渡しのメモになり、Actorをカンマ区切りで複数選択する
+
+```md
+sequenceDiagram
+  Alice->>+John: Hello John, how are you?
+  Note right of John:he is so busy...
+  alice->>+John: John, can you hear me?
+  John-->>-Alice: Hi Alice, I can hear you!
+  John-->>-Alice: I feel great!
+  Note over John,Alice: Nice Communication!
+```
 
 ```mermaid
 sequenceDiagram
