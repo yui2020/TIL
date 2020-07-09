@@ -143,3 +143,82 @@ sequenceDiagram
   John-->>-Alice: I feel great!
   Note over John,Alice: Nice Communication!
 ```
+
+
+## Loop
+
+```md
+loop [ループテキスト]
+  [ループ内容]
+end
+```
+
+上の形でループを表現する
+
+```md
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  loop Every minute
+    John-->Alice: Great!
+  end
+```
+
+```mermaid
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  loop Every minute
+    John-->Alice: Great!
+  end
+```
+
+## Alt and Opt
+
+シーケンス図内で分岐を表す
+
+```md
+alt [分岐A]
+  [内容]
+else
+  [内容]
+end
+```
+
+elseがない場合はopt
+
+```md
+opt [分岐]
+  [内容]
+end
+```
+
+```md
+sequenceDiagram
+  Alice->>Bob: Hello Bob, how are you?
+  alt is sick
+    Bob->>Alice: Not so good :(
+  else is well
+    Bob->>Alice: Feeling fresh like a daisy
+  end
+  opt Extra response
+    Bob->>Alice: Thanks for asking!
+  end
+```
+
+```mermaid
+sequenceDiagram
+  Alice->>Bob: Hello Boc, how are you?
+  alt is sick
+    Bob->>Alice: Not so good :(
+  else is well
+    Bob->>Alice: Feeling fresh like a daisy
+  end
+  opt Extra response
+    Bob->>Alice: Thanks for asking!
+  end
+```
+
+# 参考
+
+https://mermaid-js.github.io/mermaid/#/sequenceDiagram
+
+https://qiita.com/ZOOSHIMA/items/693ee8fd93146dd69b0e
