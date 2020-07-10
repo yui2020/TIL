@@ -8,7 +8,7 @@
 
 NOTE: GitHub上でシーケンス図を表示するためには下記のような**Chrome拡張機能が必要**です
 
-NOTE: To view a sequence diagram on GitHub, you **need the following chrome extension**;
+NOTE: To view a sequence diagram on GitHub, you **need a Chrome extension below:**
 
 [mermaid-diagrams](https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
 
